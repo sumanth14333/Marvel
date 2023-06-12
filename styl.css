@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0px;
+    background-size: cover;
+    
+}
+#container{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 50px;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.2);
+    height: 350px;
+    width: 750px; 
+    margin-left: 22.5%;
+}
+/* #background{
+    margin-left: 22.5%;
+} */
+
+header{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 0;
+    margin-left: 22.5%;
+    background-color: black;
+    width: 810px;
+}
+
+#hero p{
+  text-align: center;
+  color: greenyellow; 
+  margin-top: 5px;
+}
+#villain p{
+    text-align: center;
+    color: red;  
+    margin-top: 5px;
+}
+
+#hero{
+    margin-right: 50px;
+}
+
+#hero img{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    border: 2px solid blue;
+}
+
+#villain img{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    border: 2px solid red;
+}
+
+#hero td{
+    color: greenyellow;
+    text-align: center;
+}
+#t:hover
+{
+    rotate: 10deg;
+    transition: 1s ease;
+    scale: 1.2;
+    animation: movet 7.5s ease;
+}
+@keyframes movet{
+    0%{
+        transform: rotate(10deg);
+        transform-origin: center;
+        scale: 1.2;
+        border-radius: 50px;
+    }
+    25%{
+        transform: rotate(0deg);
+        scale: 1;
+        transform-origin: center;
+    }
+    50%{
+        transform: rotate(-10deg);
+        transform-origin: center;
+        scale: 1.2;
+        border-radius: 50px;
+    }
+    75%{
+        transform: rotate(0deg);
+        scale: 1;
+        transform-origin: center;
+    }
+    100%{
+        transform: rotate(10deg);
+        transform-origin: center;
+        scale: 1.2;
+        border-radius: 50px;  
+    }
+}
+
+#villain td{
+    color: red;
+    text-align: center;
+    transition: 1s ease;
+}
+#villain td:hover{
+    transform: rotate(-10deg);
+    scale: 1.3;
+    transform-origin: top center;
+    animation: movetd 7.5s ease;
+}
+@keyframes movetd{
+    0%{
+        transform: rotate(-360deg);
+        transform-origin: center;
+        scale: 1.2;
+        border-radius: 50px;
+    }
+    /* 25%{
+        transform: rotate(0deg);
+        scale: 1;
+        transform-origin: center;
+    } */
+    50%{
+        transform: rotate(0deg);
+        transform-origin: center;
+        scale: 1.2;
+        border-radius: 50px;
+    }
+    /* 75%{
+        transform: rotate(0deg);
+        scale: 1;
+        transform-origin: center;
+    } */
+    100%{
+        transform: rotate(360deg);
+        transform-origin: center;
+        scale: 1.2;
+        border-radius: 50px;  
+    }
+}
